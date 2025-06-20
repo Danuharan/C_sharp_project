@@ -16,7 +16,7 @@ namespace UnicomTICManagementSystem
         [STAThread]
         static void Main()
         {
-            //Migration.CreateTables();
+            Migration.CreateTables();
 
 
             Application.EnableVisualStyles();

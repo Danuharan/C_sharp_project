@@ -12,3 +12,5 @@ C:\Users\Danuharan\Desktop\FOR C# PROJECT\UnicomTICManagementSystem\UnicomTICMan
 C:\Users\Danuharan\Desktop\FOR C# PROJECT\UnicomTICManagementSystem\UnicomTICManagementSystem\obj\Debug\UnicomTICManagementSystem.exe.config
 C:\Users\Danuharan\Desktop\FOR C# PROJECT\UnicomTICManagementSystem\UnicomTICManagementSystem\obj\Debug\UnicomTI.449BFD41.Up2Date
 C:\Users\Danuharan\Desktop\FOR C# PROJECT\UnicomTICManagementSystem\UnicomTICManagementSystem\obj\Debug\UnicomTICManagementSystem.Views.LoginForm.resources
+C:\Users\Danuharan\Desktop\FOR C# PROJECT\UnicomTICManagementSystem\UnicomTICManagementSystem\obj\Debug\UnicomTICManagementSystem.Views.MainForm.resources
+C:\Users\Danuharan\Desktop\FOR C# PROJECT\UnicomTICManagementSystem\UnicomTICManagementSystem\obj\Debug\UnicomTICManagementSystem.Views.CourseForm.resources

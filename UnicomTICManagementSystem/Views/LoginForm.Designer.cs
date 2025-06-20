@@ -33,6 +33,7 @@
             this.tPassword = new System.Windows.Forms.TextBox();
             this.comboBox_Role = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button_Login = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -40,7 +41,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblDummy = new System.Windows.Forms.Label();
-            this.button_Login = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -100,6 +100,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(326, 319);
             this.panel1.TabIndex = 6;
+            // 
+            // button_Login
+            // 
+            this.button_Login.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.button_Login.Font = new System.Drawing.Font("Lucida Bright", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Login.Location = new System.Drawing.Point(124, 274);
+            this.button_Login.Name = "button_Login";
+            this.button_Login.Size = new System.Drawing.Size(110, 34);
+            this.button_Login.TabIndex = 13;
+            this.button_Login.Text = "LOG IN";
+            this.button_Login.UseVisualStyleBackColor = false;
+            this.button_Login.Click += new System.EventHandler(this.button_Login_Click);
             // 
             // label2
             // 
@@ -172,21 +184,10 @@
             this.lblDummy.AutoSize = true;
             this.lblDummy.Location = new System.Drawing.Point(743, 403);
             this.lblDummy.Name = "lblDummy";
-            this.lblDummy.Size = new System.Drawing.Size(44, 16);
+            this.lblDummy.Size = new System.Drawing.Size(10, 16);
             this.lblDummy.TabIndex = 12;
-            this.lblDummy.Text = "label4";
+            this.lblDummy.Text = "l";
             this.lblDummy.Visible = false;
-            // 
-            // button_Login
-            // 
-            this.button_Login.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button_Login.Font = new System.Drawing.Font("Lucida Bright", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Login.Location = new System.Drawing.Point(124, 274);
-            this.button_Login.Name = "button_Login";
-            this.button_Login.Size = new System.Drawing.Size(110, 34);
-            this.button_Login.TabIndex = 13;
-            this.button_Login.Text = "LOG IN";
-            this.button_Login.UseVisualStyleBackColor = false;
             // 
             // LoginForm
             // 

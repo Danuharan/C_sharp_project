@@ -21,7 +21,8 @@ namespace UnicomTICManagementSystem.Views
             comboBox_Role.Items.Add("Staff");
             comboBox_Role.Items.Add("Student");
             comboBox_Role.Items.Add("Lecturer");
-        }
+            comboBox_Role.Items.Add("Admin");
+            }
 
         }
 
@@ -87,6 +88,17 @@ namespace UnicomTICManagementSystem.Views
 
         }
 
+        private void button_Login_Click(object sender, EventArgs e)
+        {
+            string selectedText = comboBox_Role.SelectedItem?.ToString(); // To pass the Role to MainForm welcom [Role] msg...
 
-}
+            if (!string.IsNullOrEmpty(selectedText))
+            {
+                MainForm form2 = new MainForm();
+                form2.ToDisplayRole = selectedText; // Pass the selected text to MainForm
+                form2.Show(); // Show in MainForm
+
+            }
+        }
+    }
 }
