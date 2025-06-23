@@ -82,6 +82,17 @@ namespace UnicomTICManagementSystem.Views
 
             this.Hide();                    // Hide the current form (MainForm)
         }
+
+        private void button5_logout_Click(object sender, EventArgs e)
+        {
+            // Show the LoginForm again
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+
+            // Close the current MainForm
+            this.Close(); 
+        }
+    
     }
     
 }

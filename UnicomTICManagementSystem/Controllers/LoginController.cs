@@ -30,7 +30,7 @@ namespace UnicomTICManagementSystem.Controllers
 
 
 
-        public List<User> GetAllStudents()               // To update new user/existing user
+        public List<User> GetAllStudents()               // To view existing user or can view subsequently after user added
         {
             List<User> users = new List<User>();
             string getUsersQuery = "SELECT * FROM Users";
@@ -61,7 +61,7 @@ namespace UnicomTICManagementSystem.Controllers
         }
 
 
-        public User GetUsertBy_UserId(int user_id)
+        public User GetUsertBy_UserId(int user_id)                          // To Get the User By using his/her Primary Key (UserId)
         {
             using (var conn = Dbconfig.GetConnection())
             {
@@ -89,7 +89,7 @@ namespace UnicomTICManagementSystem.Controllers
         }
 
 
-        public void UpdateUser(User user)
+        public void UpdateUser(User user)                           // To update new user/existing user
         {
             using (var conn = Dbconfig.GetConnection())
             {
@@ -99,6 +99,17 @@ namespace UnicomTICManagementSystem.Controllers
                 command.Parameters.AddWithValue("@Role", user.Role);
                 command.Parameters.AddWithValue("@UserID", user.UserId);
                 command.Parameters.AddWithValue("@updatedAt", user.updated_at);
+                command.ExecuteNonQuery();
+            }
+        }
+
+
+        public void DeleteUser(int UserId)                    // To update existing user entire field
+        {
+            using (var conn = Dbconfig.GetConnection())
+            {
+                var command = new SQLiteCommand("DELETE FROM Users WHERE UserId = @Id", conn);
+                command.Parameters.AddWithValue("@Id", UserId);
                 command.ExecuteNonQuery();
             }
         }

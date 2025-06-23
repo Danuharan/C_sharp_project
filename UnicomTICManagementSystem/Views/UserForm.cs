@@ -137,7 +137,7 @@ namespace UnicomTICManagementSystem.Views
                 UserId = selectedUserId,
                 UserName = textBox1.Text,
                 Password = textBox2.Text,
-                Role = textBox2.Text,
+                Role = comboBox1.Text,
                 updated_at = DateTime.Now
 
                
@@ -146,9 +146,27 @@ namespace UnicomTICManagementSystem.Views
             _userController.UpdateUser(user);
             LoadStudents();
             ClearForm();
-            MessageBox.Show("Student Updated Successfully");
+            MessageBox.Show("User Updated Successfully");
 
         }
-    
+
+        private void button3_DELETE_Click(object sender, EventArgs e)
+        {
+            if (selectedUserId == -1)
+            {
+                MessageBox.Show("Please select a user to delete.");
+                return;
+            }
+
+            var confirmResult = MessageBox.Show("Are you sure to delete this user?", "Confirm Delete", MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
+            {
+                _userController.DeleteUser(selectedUserId);
+                LoadStudents();
+                ClearForm();
+                MessageBox.Show("User Deleted Successfully");
+
+            }
+        }
     }
 }

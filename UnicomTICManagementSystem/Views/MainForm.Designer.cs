@@ -33,14 +33,14 @@
             this.label_Rolebased_welcome = new System.Windows.Forms.Label();
             this.label_Welcome = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DB_User = new System.Windows.Forms.Button();
             this.DB_view_timetable = new System.Windows.Forms.Button();
             this.DB_view_marks = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button5_logout = new System.Windows.Forms.Button();
             this.DB_timetable = new System.Windows.Forms.Button();
             this.DB_exam_marks = new System.Windows.Forms.Button();
             this.DB_student = new System.Windows.Forms.Button();
             this.DB_course_sub = new System.Windows.Forms.Button();
-            this.DB_User = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +87,7 @@
             this.panel1.Controls.Add(this.DB_User);
             this.panel1.Controls.Add(this.DB_view_timetable);
             this.panel1.Controls.Add(this.DB_view_marks);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button5_logout);
             this.panel1.Controls.Add(this.DB_timetable);
             this.panel1.Controls.Add(this.DB_exam_marks);
             this.panel1.Controls.Add(this.DB_student);
@@ -97,6 +97,18 @@
             this.panel1.Size = new System.Drawing.Size(610, 388);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // DB_User
+            // 
+            this.DB_User.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DB_User.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DB_User.Location = new System.Drawing.Point(15, 19);
+            this.DB_User.Name = "DB_User";
+            this.DB_User.Size = new System.Drawing.Size(371, 34);
+            this.DB_User.TabIndex = 7;
+            this.DB_User.Text = "User Register Management";
+            this.DB_User.UseVisualStyleBackColor = false;
+            this.DB_User.Click += new System.EventHandler(this.DB_User_Click);
             // 
             // DB_view_timetable
             // 
@@ -120,15 +132,16 @@
             this.DB_view_marks.Text = "View My Marks";
             this.DB_view_marks.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // button5_logout
             // 
-            this.button5.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(447, 270);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(107, 36);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Logout";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5_logout.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5_logout.Location = new System.Drawing.Point(478, 318);
+            this.button5_logout.Name = "button5_logout";
+            this.button5_logout.Size = new System.Drawing.Size(107, 36);
+            this.button5_logout.TabIndex = 4;
+            this.button5_logout.Text = "Logout";
+            this.button5_logout.UseVisualStyleBackColor = true;
+            this.button5_logout.Click += new System.EventHandler(this.button5_logout_Click);
             // 
             // DB_timetable
             // 
@@ -176,18 +189,6 @@
             this.DB_course_sub.VisibleChanged += new System.EventHandler(this.DB_course_sub_VisibleChanged);
             this.DB_course_sub.Click += new System.EventHandler(this.DB_course_sub_Click);
             // 
-            // DB_User
-            // 
-            this.DB_User.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.DB_User.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DB_User.Location = new System.Drawing.Point(15, 19);
-            this.DB_User.Name = "DB_User";
-            this.DB_User.Size = new System.Drawing.Size(371, 34);
-            this.DB_User.TabIndex = 7;
-            this.DB_User.Text = "User Register Management";
-            this.DB_User.UseVisualStyleBackColor = false;
-            this.DB_User.Click += new System.EventHandler(this.DB_User_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -213,7 +214,7 @@
         private System.Windows.Forms.Label label_Rolebased_welcome;
         private System.Windows.Forms.Label label_Welcome;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button5_logout;
         private System.Windows.Forms.Button DB_timetable;
         private System.Windows.Forms.Button DB_exam_marks;
         private System.Windows.Forms.Button DB_student;
