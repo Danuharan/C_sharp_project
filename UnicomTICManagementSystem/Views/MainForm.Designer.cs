@@ -33,13 +33,14 @@
             this.label_Rolebased_welcome = new System.Windows.Forms.Label();
             this.label_Welcome = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.DB_course_sub = new System.Windows.Forms.Button();
-            this.DB_student = new System.Windows.Forms.Button();
-            this.DB_exam_marks = new System.Windows.Forms.Button();
-            this.DB_timetable = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.DB_view_marks = new System.Windows.Forms.Button();
             this.DB_view_timetable = new System.Windows.Forms.Button();
+            this.DB_view_marks = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.DB_timetable = new System.Windows.Forms.Button();
+            this.DB_exam_marks = new System.Windows.Forms.Button();
+            this.DB_student = new System.Windows.Forms.Button();
+            this.DB_course_sub = new System.Windows.Forms.Button();
+            this.DB_User = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,6 +84,7 @@
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.DB_User);
             this.panel1.Controls.Add(this.DB_view_timetable);
             this.panel1.Controls.Add(this.DB_view_marks);
             this.panel1.Controls.Add(this.button5);
@@ -92,55 +94,31 @@
             this.panel1.Controls.Add(this.DB_course_sub);
             this.panel1.Location = new System.Drawing.Point(106, 103);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(579, 323);
+            this.panel1.Size = new System.Drawing.Size(610, 388);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // DB_course_sub
+            // DB_view_timetable
             // 
-            this.DB_course_sub.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.DB_course_sub.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DB_course_sub.Location = new System.Drawing.Point(17, 14);
-            this.DB_course_sub.Name = "DB_course_sub";
-            this.DB_course_sub.Size = new System.Drawing.Size(371, 33);
-            this.DB_course_sub.TabIndex = 0;
-            this.DB_course_sub.Text = "Course and Subject Management";
-            this.DB_course_sub.UseVisualStyleBackColor = false;
-            this.DB_course_sub.VisibleChanged += new System.EventHandler(this.DB_course_sub_VisibleChanged);
-            this.DB_course_sub.Click += new System.EventHandler(this.DB_course_sub_Click);
+            this.DB_view_timetable.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DB_view_timetable.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DB_view_timetable.Location = new System.Drawing.Point(17, 124);
+            this.DB_view_timetable.Name = "DB_view_timetable";
+            this.DB_view_timetable.Size = new System.Drawing.Size(371, 36);
+            this.DB_view_timetable.TabIndex = 6;
+            this.DB_view_timetable.Text = "View My Timetable";
+            this.DB_view_timetable.UseVisualStyleBackColor = false;
             // 
-            // DB_student
+            // DB_view_marks
             // 
-            this.DB_student.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.DB_student.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DB_student.Location = new System.Drawing.Point(17, 259);
-            this.DB_student.Name = "DB_student";
-            this.DB_student.Size = new System.Drawing.Size(371, 34);
-            this.DB_student.TabIndex = 1;
-            this.DB_student.Text = "Student Management";
-            this.DB_student.UseVisualStyleBackColor = false;
-            // 
-            // DB_exam_marks
-            // 
-            this.DB_exam_marks.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.DB_exam_marks.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DB_exam_marks.Location = new System.Drawing.Point(17, 114);
-            this.DB_exam_marks.Name = "DB_exam_marks";
-            this.DB_exam_marks.Size = new System.Drawing.Size(371, 31);
-            this.DB_exam_marks.TabIndex = 2;
-            this.DB_exam_marks.Text = "Exam and Marks Management";
-            this.DB_exam_marks.UseVisualStyleBackColor = false;
-            // 
-            // DB_timetable
-            // 
-            this.DB_timetable.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.DB_timetable.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DB_timetable.Location = new System.Drawing.Point(15, 154);
-            this.DB_timetable.Name = "DB_timetable";
-            this.DB_timetable.Size = new System.Drawing.Size(373, 35);
-            this.DB_timetable.TabIndex = 3;
-            this.DB_timetable.Text = "Timetable Management";
-            this.DB_timetable.UseVisualStyleBackColor = false;
+            this.DB_view_marks.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DB_view_marks.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DB_view_marks.Location = new System.Drawing.Point(17, 267);
+            this.DB_view_marks.Name = "DB_view_marks";
+            this.DB_view_marks.Size = new System.Drawing.Size(371, 31);
+            this.DB_view_marks.TabIndex = 5;
+            this.DB_view_marks.Text = "View My Marks";
+            this.DB_view_marks.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
@@ -152,27 +130,63 @@
             this.button5.Text = "Logout";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // DB_view_marks
+            // DB_timetable
             // 
-            this.DB_view_marks.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.DB_view_marks.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DB_view_marks.Location = new System.Drawing.Point(17, 206);
-            this.DB_view_marks.Name = "DB_view_marks";
-            this.DB_view_marks.Size = new System.Drawing.Size(371, 31);
-            this.DB_view_marks.TabIndex = 5;
-            this.DB_view_marks.Text = "View My Marks";
-            this.DB_view_marks.UseVisualStyleBackColor = false;
+            this.DB_timetable.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DB_timetable.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DB_timetable.Location = new System.Drawing.Point(15, 215);
+            this.DB_timetable.Name = "DB_timetable";
+            this.DB_timetable.Size = new System.Drawing.Size(373, 35);
+            this.DB_timetable.TabIndex = 3;
+            this.DB_timetable.Text = "Timetable Management";
+            this.DB_timetable.UseVisualStyleBackColor = false;
             // 
-            // DB_view_timetable
+            // DB_exam_marks
             // 
-            this.DB_view_timetable.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.DB_view_timetable.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DB_view_timetable.Location = new System.Drawing.Point(17, 63);
-            this.DB_view_timetable.Name = "DB_view_timetable";
-            this.DB_view_timetable.Size = new System.Drawing.Size(371, 36);
-            this.DB_view_timetable.TabIndex = 6;
-            this.DB_view_timetable.Text = "View My Timetable";
-            this.DB_view_timetable.UseVisualStyleBackColor = false;
+            this.DB_exam_marks.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DB_exam_marks.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DB_exam_marks.Location = new System.Drawing.Point(17, 175);
+            this.DB_exam_marks.Name = "DB_exam_marks";
+            this.DB_exam_marks.Size = new System.Drawing.Size(371, 31);
+            this.DB_exam_marks.TabIndex = 2;
+            this.DB_exam_marks.Text = "Exam and Marks Management";
+            this.DB_exam_marks.UseVisualStyleBackColor = false;
+            // 
+            // DB_student
+            // 
+            this.DB_student.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DB_student.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DB_student.Location = new System.Drawing.Point(17, 320);
+            this.DB_student.Name = "DB_student";
+            this.DB_student.Size = new System.Drawing.Size(371, 34);
+            this.DB_student.TabIndex = 1;
+            this.DB_student.Text = "Student Management";
+            this.DB_student.UseVisualStyleBackColor = false;
+            // 
+            // DB_course_sub
+            // 
+            this.DB_course_sub.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DB_course_sub.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DB_course_sub.Location = new System.Drawing.Point(17, 75);
+            this.DB_course_sub.Name = "DB_course_sub";
+            this.DB_course_sub.Size = new System.Drawing.Size(371, 33);
+            this.DB_course_sub.TabIndex = 0;
+            this.DB_course_sub.Text = "Course and Subject Management";
+            this.DB_course_sub.UseVisualStyleBackColor = false;
+            this.DB_course_sub.VisibleChanged += new System.EventHandler(this.DB_course_sub_VisibleChanged);
+            this.DB_course_sub.Click += new System.EventHandler(this.DB_course_sub_Click);
+            // 
+            // DB_User
+            // 
+            this.DB_User.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DB_User.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DB_User.Location = new System.Drawing.Point(15, 19);
+            this.DB_User.Name = "DB_User";
+            this.DB_User.Size = new System.Drawing.Size(371, 34);
+            this.DB_User.TabIndex = 7;
+            this.DB_User.Text = "User Register Management";
+            this.DB_User.UseVisualStyleBackColor = false;
+            this.DB_User.Click += new System.EventHandler(this.DB_User_Click);
             // 
             // MainForm
             // 
@@ -180,7 +194,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(920, 535);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label_Welcome);
             this.Controls.Add(this.label_Rolebased_welcome);
@@ -206,5 +220,6 @@
         private System.Windows.Forms.Button DB_course_sub;
         private System.Windows.Forms.Button DB_view_timetable;
         private System.Windows.Forms.Button DB_view_marks;
+        private System.Windows.Forms.Button DB_User;
     }
 }

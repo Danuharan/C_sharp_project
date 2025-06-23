@@ -44,6 +44,7 @@ namespace UnicomTICManagementSystem.Views
                 DB_student.Visible = false; 
                 DB_course_sub.Visible = false; 
                 DB_exam_marks.Visible = false; 
+                DB_User.Visible = false;
             }
             
             else if (label_Rolebased_welcome.Text == "Staff")
@@ -52,6 +53,7 @@ namespace UnicomTICManagementSystem.Views
                 DB_course_sub.Visible = false;
                 DB_view_timetable.Visible = false;
                 DB_view_marks.Visible = false;
+                DB_User.Visible = false;
 
             }
 
@@ -61,6 +63,7 @@ namespace UnicomTICManagementSystem.Views
                 DB_course_sub.Visible = false;
                 DB_view_timetable.Visible = false;
                 DB_view_marks.Visible = false;
+                DB_User.Visible = false;
 
             }
         }
@@ -71,6 +74,14 @@ namespace UnicomTICManagementSystem.Views
             form3.Show();               
             
         }
-    
+
+        private void DB_User_Click(object sender, EventArgs e)
+        {
+            UserForm form_user_register = new UserForm();  // To show UserForm (User Registration in initally by admin)
+            form_user_register.Show();
+
+            this.Hide();                    // Hide the current form (MainForm)
+        }
     }
+    
 }

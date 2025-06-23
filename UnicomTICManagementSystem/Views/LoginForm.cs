@@ -89,15 +89,18 @@ namespace UnicomTICManagementSystem.Views
         }
 
         private void button_Login_Click(object sender, EventArgs e)
-        {
+        {   
+            
+
             string selectedText = comboBox_Role.SelectedItem?.ToString(); // To pass the Role to MainForm welcom [Role] msg...
 
             if (!string.IsNullOrEmpty(selectedText))
             {
                 MainForm form2 = new MainForm();
                 form2.ToDisplayRole = selectedText; // Pass the selected text to MainForm
-                form2.Show(); // Show in MainForm
+                form2.Show(); // To Show the MainForm
 
+                this.Hide();                    // Hide the current form (LoginForm)
             }
         }
     }

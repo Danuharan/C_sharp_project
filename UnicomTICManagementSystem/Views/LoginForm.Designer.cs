@@ -196,7 +196,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(835, 450);
+            this.ClientSize = new System.Drawing.Size(880, 507);
             this.Controls.Add(this.lblDummy);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox4);
