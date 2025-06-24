@@ -116,7 +116,7 @@ namespace UnicomTICManagementSystem.Views
                         cmd.Parameters.AddWithValue("@password", password);
                         cmd.Parameters.AddWithValue("@role", role);
 
-                        int userCount = Convert.ToInt32(cmd.ExecuteScalar());
+                        int userCount = Convert.ToInt32(cmd.ExecuteScalar());   // ExecuteScalar() --> Runs the query and returns one value only
 
                         if (userCount > 0)
                         {
@@ -128,10 +128,9 @@ namespace UnicomTICManagementSystem.Views
 
                             if (!string.IsNullOrEmpty(selectedText))
                             {
-                                MainForm form2 = new MainForm();
+                                MainForm form2 = new MainForm(selectedText);
                                 form2.ToDisplayRole = selectedText; // Pass the selected text to MainForm
                                 form2.Show(); // To Show the selected text to MainForm (ex. If student login --> welcome Student!)
-
                                 this.Hide();                    // Hide the current form (LoginForm)
                             }
                         }

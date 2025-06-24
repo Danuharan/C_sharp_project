@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.backto_login = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,11 +146,23 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "User Register Form ";
             // 
+            // backto_login
+            // 
+            this.backto_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backto_login.Location = new System.Drawing.Point(408, 187);
+            this.backto_login.Name = "backto_login";
+            this.backto_login.Size = new System.Drawing.Size(222, 30);
+            this.backto_login.TabIndex = 11;
+            this.backto_login.Text = "Back To LogIn";
+            this.backto_login.UseVisualStyleBackColor = true;
+            this.backto_login.Click += new System.EventHandler(this.button1_Click);
+            // 
             // UserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.backto_login);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
@@ -182,5 +195,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button backto_login;
     }
 }

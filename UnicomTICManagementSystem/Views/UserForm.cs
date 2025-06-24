@@ -168,5 +168,13 @@ namespace UnicomTICManagementSystem.Views
 
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm(); // Create a new instance of loginForm
+            loginForm.Show();
+
+            this.Close(); // Close the current UserForm
+        }
     }
 }

@@ -26,53 +26,53 @@ namespace UnicomTICManagementSystem.Repositories
                         );
 
                         CREATE TABLE IF NOT EXISTS Courses (
-                            CourseID INTEGER PRIMARY KEY AUTOINCREMENT,
+                            CourseId INTEGER PRIMARY KEY AUTOINCREMENT,
                             CourseName TEXT
                         );
 
                         CREATE TABLE IF NOT EXISTS Subjects (
-                            SubjectID INTEGER PRIMARY KEY AUTOINCREMENT,
+                            SubjectId INTEGER PRIMARY KEY AUTOINCREMENT,
                             SubjectName TEXT,
-                            CourseID INTEGER,
-                            FOREIGN KEY(CourseID) REFERENCES Courses(CourseID)
+                            CourseId INTEGER,
+                            FOREIGN KEY(CourseId) REFERENCES Courses(CourseId)
                         );
 
                         CREATE TABLE IF NOT EXISTS Students (
-                            StudentID INTEGER PRIMARY KEY AUTOINCREMENT,
-                            Name TEXT,
-                            CourseID INTEGER,
-                            FOREIGN KEY(CourseID) REFERENCES Courses(CourseID)
+                            StudentId INTEGER PRIMARY KEY AUTOINCREMENT,
+                            StudentName TEXT,
+                            CourseId INTEGER,
+                            FOREIGN KEY(CourseId) REFERENCES Courses(CourseId)
                         );
 
                         CREATE TABLE IF NOT EXISTS Exams (
-                            ExamID INTEGER PRIMARY KEY AUTOINCREMENT,
+                            ExamId INTEGER PRIMARY KEY AUTOINCREMENT,
                             ExamName TEXT,
-                            SubjectID INTEGER,
-                            FOREIGN KEY(SubjectID) REFERENCES Subjects(SubjectID)
+                            SubjectId INTEGER,
+                            FOREIGN KEY(SubjectId) REFERENCES Subjects(SubjectId)
                         );
 
                         CREATE TABLE IF NOT EXISTS Marks (
-                            MarkID INTEGER PRIMARY KEY AUTOINCREMENT,
-                            StudentID INTEGER,
-                            ExamID INTEGER,
+                            MarkId INTEGER PRIMARY KEY AUTOINCREMENT,
+                            StudentId INTEGER,
+                            ExamId INTEGER,
                             Score INTEGER,
-                            FOREIGN KEY(StudentID) REFERENCES Students(StudentID),
-                            FOREIGN KEY(ExamID) REFERENCES Exams(ExamID)
+                            FOREIGN KEY(StudentId) REFERENCES Students(StudentId),
+                            FOREIGN KEY(ExamId) REFERENCES Exams(ExamId)
                         );
 
                         CREATE TABLE IF NOT EXISTS Rooms (
-                            RoomID INTEGER PRIMARY KEY AUTOINCREMENT,
+                            RoomId INTEGER PRIMARY KEY AUTOINCREMENT,
                             RoomName TEXT,
                             RoomType TEXT
                         );
 
                         CREATE TABLE IF NOT EXISTS Timetables (
-                            TimetableID INTEGER PRIMARY KEY AUTOINCREMENT,
-                            SubjectID INTEGER,
+                            TimetableId INTEGER PRIMARY KEY AUTOINCREMENT,
+                            SubjectId INTEGER,
                             TimeSlot TEXT,
-                            RoomID INTEGER,
-                            FOREIGN KEY(SubjectID) REFERENCES Subjects(SubjectID),
-                            FOREIGN KEY(RoomID) REFERENCES Rooms(RoomID)
+                            RoomId INTEGER,
+                            FOREIGN KEY(SubjectId) REFERENCES Subjects(SubjectId),
+                            FOREIGN KEY(RoomId) REFERENCES Rooms(RoomId)
                         );
                     
                 ";
