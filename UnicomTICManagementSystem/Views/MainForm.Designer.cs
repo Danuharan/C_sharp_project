@@ -153,6 +153,7 @@
             this.DB_timetable.TabIndex = 3;
             this.DB_timetable.Text = "Timetable Management";
             this.DB_timetable.UseVisualStyleBackColor = false;
+            this.DB_timetable.Click += new System.EventHandler(this.DB_timetable_Click);
             // 
             // DB_exam_marks
             // 
@@ -164,6 +165,7 @@
             this.DB_exam_marks.TabIndex = 2;
             this.DB_exam_marks.Text = "Exam and Marks Management";
             this.DB_exam_marks.UseVisualStyleBackColor = false;
+            this.DB_exam_marks.Click += new System.EventHandler(this.DB_exam_marks_Click);
             // 
             // DB_student
             // 
@@ -175,6 +177,7 @@
             this.DB_student.TabIndex = 1;
             this.DB_student.Text = "Student Management";
             this.DB_student.UseVisualStyleBackColor = false;
+            this.DB_student.Click += new System.EventHandler(this.DB_student_Click);
             // 
             // DB_course_sub
             // 

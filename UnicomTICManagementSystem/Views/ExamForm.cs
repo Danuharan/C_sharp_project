@@ -16,5 +16,18 @@ namespace UnicomTICManagementSystem.Views
         {
             InitializeComponent();
         }
+
+        private void label_form_title_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MarkForm markForm = new MarkForm();
+            markForm.Show();
+
+            this.Hide(); // Hides the current MainForm
+        }
     }
 }

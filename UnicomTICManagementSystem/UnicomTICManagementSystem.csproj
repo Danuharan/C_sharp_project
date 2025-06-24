@@ -136,11 +136,23 @@
     <EmbeddedResource Include="Views\CourseForm.resx">
       <DependentUpon>CourseForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\ExamForm.resx">
+      <DependentUpon>ExamForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MarkForm.resx">
+      <DependentUpon>MarkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TimetableForm.resx">
+      <DependentUpon>TimetableForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>

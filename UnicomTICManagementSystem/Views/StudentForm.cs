@@ -16,5 +16,15 @@ namespace UnicomTICManagementSystem.Views
         {
             InitializeComponent();
         }
+
+        private void label_form_title_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StudentForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

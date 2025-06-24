@@ -107,7 +107,30 @@ namespace UnicomTICManagementSystem.Views
             // Close the current MainForm
             this.Close(); 
         }
-    
+
+        private void DB_student_Click(object sender, EventArgs e)
+        {
+            StudentForm studentForm = new StudentForm();
+            studentForm.Show();
+
+            this.Hide(); // Hides the current MainForm
+        }
+
+        private void DB_exam_marks_Click(object sender, EventArgs e)
+        {
+            ExamForm examForm = new ExamForm();
+            examForm.Show();
+
+            this.Hide(); // Hides the current MainForm
+        }
+
+        private void DB_timetable_Click(object sender, EventArgs e)
+        {
+            TimetableForm timetableForm = new TimetableForm();
+            timetableForm.Show();
+
+            this.Hide(); // Hides the current MainForm
+        }
     }
     
 }

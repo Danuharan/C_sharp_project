@@ -16,5 +16,15 @@ namespace UnicomTICManagementSystem.Views
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string userRole = "Admin"; // Or get it from a login form, etc.
+
+            MainForm mainForm = new MainForm(userRole);
+            mainForm.Show();
+
+            this.Hide();
+        }
     }
 }
