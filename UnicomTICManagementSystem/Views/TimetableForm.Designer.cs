@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView2_exam_marks = new System.Windows.Forms.DataGridView();
+            this.dataGridView2_TimeTable = new System.Windows.Forms.DataGridView();
             this.button2_delete = new System.Windows.Forms.Button();
             this.button2_edit = new System.Windows.Forms.Button();
             this.button2_add = new System.Windows.Forms.Button();
@@ -40,29 +40,29 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2_exam_marks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2_TimeTable)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(536, 396);
+            this.button1.Location = new System.Drawing.Point(489, 396);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 37);
+            this.button1.Size = new System.Drawing.Size(242, 37);
             this.button1.TabIndex = 36;
-            this.button1.Text = "Back";
+            this.button1.Text = "Back to DashBoard";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView2_exam_marks
+            // dataGridView2_TimeTable
             // 
-            this.dataGridView2_exam_marks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2_exam_marks.Location = new System.Drawing.Point(88, 214);
-            this.dataGridView2_exam_marks.Name = "dataGridView2_exam_marks";
-            this.dataGridView2_exam_marks.RowHeadersWidth = 51;
-            this.dataGridView2_exam_marks.RowTemplate.Height = 24;
-            this.dataGridView2_exam_marks.Size = new System.Drawing.Size(525, 176);
-            this.dataGridView2_exam_marks.TabIndex = 35;
+            this.dataGridView2_TimeTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2_TimeTable.Location = new System.Drawing.Point(88, 214);
+            this.dataGridView2_TimeTable.Name = "dataGridView2_TimeTable";
+            this.dataGridView2_TimeTable.RowHeadersWidth = 51;
+            this.dataGridView2_TimeTable.RowTemplate.Height = 24;
+            this.dataGridView2_TimeTable.Size = new System.Drawing.Size(525, 176);
+            this.dataGridView2_TimeTable.TabIndex = 35;
             // 
             // button2_delete
             // 
@@ -90,6 +90,7 @@
             this.button2_add.TabIndex = 32;
             this.button2_add.Text = "ADD";
             this.button2_add.UseVisualStyleBackColor = true;
+            this.button2_add.Click += new System.EventHandler(this.button2_add_Click);
             // 
             // comboBox1
             // 
@@ -132,7 +133,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(139, 103);
+            this.label1.Location = new System.Drawing.Point(139, 129);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 20);
             this.label1.TabIndex = 37;
@@ -150,7 +151,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(139, 131);
+            this.label2.Location = new System.Drawing.Point(164, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 20);
             this.label2.TabIndex = 39;
@@ -166,7 +167,7 @@
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView2_exam_marks);
+            this.Controls.Add(this.dataGridView2_TimeTable);
             this.Controls.Add(this.button2_delete);
             this.Controls.Add(this.button2_edit);
             this.Controls.Add(this.button2_add);
@@ -175,7 +176,7 @@
             this.Controls.Add(this.label_form_title);
             this.Name = "TimetableForm";
             this.Text = "TimetableForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2_exam_marks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2_TimeTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,7 +185,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView2_exam_marks;
+        private System.Windows.Forms.DataGridView dataGridView2_TimeTable;
         private System.Windows.Forms.Button button2_delete;
         private System.Windows.Forms.Button button2_edit;
         private System.Windows.Forms.Button button2_add;

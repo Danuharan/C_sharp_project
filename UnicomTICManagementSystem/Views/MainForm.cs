@@ -47,22 +47,36 @@ namespace UnicomTICManagementSystem.Views
 
         private void panel1_Paint(object sender, PaintEventArgs e)          
         {                                                                                   // Below if statements decide which are going to show in panel...
-            if (label_Rolebased_welcome.Text == "Student") // Case-sensitive comparison
+            if (label_Rolebased_welcome.Text == "Admin")    // Case-sensitive comparison
+            {
+                DB_view_timetable.Visible = false;
+                DB_view_marks.Visible = false;
+                DB_marks.Visible = false;
+
+
+            } 
+
+            else if (label_Rolebased_welcome.Text == "Student") 
             {
                 DB_timetable.Visible = false; 
                 DB_student.Visible = false; 
                 //DB_course_sub.Visible = false; 
                 DB_exam_marks.Visible = false; 
                 DB_User.Visible = false;
+                DB_marks.Visible = false;
+                DB_room.Visible = false;
+                
             }
             
-            else if (label_Rolebased_welcome.Text == "Staff")
+            else if (label_Rolebased_welcome.Text == "Staff") 
             {
                 DB_student.Visible = false;
                 //DB_course_sub.Visible = false;
                 DB_view_timetable.Visible = false;
                 DB_view_marks.Visible = false;
                 DB_User.Visible = false;
+                DB_marks.Visible = false;
+                DB_room.Visible = false;
 
             }
 
@@ -73,8 +87,12 @@ namespace UnicomTICManagementSystem.Views
                 DB_view_timetable.Visible = false;
                 DB_view_marks.Visible = false;
                 DB_User.Visible = false;
+                DB_exam_marks.Visible = false;
+                DB_room.Visible = false;
 
             }
+
+
         }
 
         private void DB_course_sub_Click(object sender, EventArgs e)
@@ -110,26 +128,30 @@ namespace UnicomTICManagementSystem.Views
 
         private void DB_student_Click(object sender, EventArgs e)
         {
-            StudentForm studentForm = new StudentForm();
+            StudentForm studentForm = new StudentForm(userRole);  // ✅ Pass the role
             studentForm.Show();
-
-            this.Hide(); // Hides the current MainForm
+            this.Hide();
         }
 
         private void DB_exam_marks_Click(object sender, EventArgs e)
         {
-            ExamForm examForm = new ExamForm();
+            ExamForm examForm = new ExamForm(userRole);  //  Pass the role
             examForm.Show();
-
-            this.Hide(); // Hides the current MainForm
+            this.Hide();
         }
 
         private void DB_timetable_Click(object sender, EventArgs e)
         {
-            TimetableForm timetableForm = new TimetableForm();
+            TimetableForm timetableForm = new TimetableForm(userRole);
             timetableForm.Show();
+            this.Hide();
+        }
 
-            this.Hide(); // Hides the current MainForm
+        private void DB_room_Click(object sender, EventArgs e)
+        {
+            RoomForm roomForm = new RoomForm(userRole);
+            roomForm.Show();
+            this.Hide();
         }
     }
     

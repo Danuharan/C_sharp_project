@@ -304,6 +304,17 @@ namespace UnicomTICManagementSystem.Views
                 MessageBox.Show("Subject Deleted Successfully");
             }
         }
-    
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MainForm dashboard = new MainForm(_userRole);  //  Pass correct role back
+            dashboard.Show();
+            this.Hide();  //  Hide this CourseForm
+        }
+
+        private void dataGridView2_subject_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

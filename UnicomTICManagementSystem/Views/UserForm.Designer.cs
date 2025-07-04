@@ -153,7 +153,7 @@
             this.backto_login.Name = "backto_login";
             this.backto_login.Size = new System.Drawing.Size(222, 30);
             this.backto_login.TabIndex = 11;
-            this.backto_login.Text = "Back To LogIn";
+            this.backto_login.Text = "Back To DashBoard";
             this.backto_login.UseVisualStyleBackColor = true;
             this.backto_login.Click += new System.EventHandler(this.button1_Click);
             // 

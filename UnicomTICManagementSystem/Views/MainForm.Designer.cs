@@ -41,6 +41,8 @@
             this.DB_exam_marks = new System.Windows.Forms.Button();
             this.DB_student = new System.Windows.Forms.Button();
             this.DB_course_sub = new System.Windows.Forms.Button();
+            this.DB_marks = new System.Windows.Forms.Button();
+            this.DB_room = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +86,8 @@
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.DB_room);
+            this.panel1.Controls.Add(this.DB_marks);
             this.panel1.Controls.Add(this.DB_User);
             this.panel1.Controls.Add(this.DB_view_timetable);
             this.panel1.Controls.Add(this.DB_view_marks);
@@ -92,9 +96,9 @@
             this.panel1.Controls.Add(this.DB_exam_marks);
             this.panel1.Controls.Add(this.DB_student);
             this.panel1.Controls.Add(this.DB_course_sub);
-            this.panel1.Location = new System.Drawing.Point(106, 103);
+            this.panel1.Location = new System.Drawing.Point(106, 83);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(610, 388);
+            this.panel1.Size = new System.Drawing.Size(610, 440);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -192,6 +196,29 @@
             this.DB_course_sub.VisibleChanged += new System.EventHandler(this.DB_course_sub_VisibleChanged);
             this.DB_course_sub.Click += new System.EventHandler(this.DB_course_sub_Click);
             // 
+            // DB_marks
+            // 
+            this.DB_marks.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DB_marks.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DB_marks.Location = new System.Drawing.Point(17, 367);
+            this.DB_marks.Name = "DB_marks";
+            this.DB_marks.Size = new System.Drawing.Size(371, 31);
+            this.DB_marks.TabIndex = 8;
+            this.DB_marks.Text = "Marks Management";
+            this.DB_marks.UseVisualStyleBackColor = false;
+            // 
+            // DB_room
+            // 
+            this.DB_room.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DB_room.Font = new System.Drawing.Font("Lucida Bright", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DB_room.Location = new System.Drawing.Point(17, 408);
+            this.DB_room.Name = "DB_room";
+            this.DB_room.Size = new System.Drawing.Size(371, 31);
+            this.DB_room.TabIndex = 9;
+            this.DB_room.Text = "Room Management";
+            this.DB_room.UseVisualStyleBackColor = false;
+            this.DB_room.Click += new System.EventHandler(this.DB_room_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -225,5 +252,7 @@
         private System.Windows.Forms.Button DB_view_timetable;
         private System.Windows.Forms.Button DB_view_marks;
         private System.Windows.Forms.Button DB_User;
+        private System.Windows.Forms.Button DB_marks;
+        private System.Windows.Forms.Button DB_room;
     }
 }

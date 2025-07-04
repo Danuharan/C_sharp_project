@@ -19,3 +19,4 @@ C:\Users\Danuharan\Desktop\FOR C# PROJECT\UnicomTICManagementSystem\UnicomTICMan
 C:\Users\Danuharan\Desktop\FOR C# PROJECT\UnicomTICManagementSystem\UnicomTICManagementSystem\obj\Debug\UnicomTICManagementSystem.Views.ExamForm.resources
 C:\Users\Danuharan\Desktop\FOR C# PROJECT\UnicomTICManagementSystem\UnicomTICManagementSystem\obj\Debug\UnicomTICManagementSystem.Views.MarkForm.resources
 C:\Users\Danuharan\Desktop\FOR C# PROJECT\UnicomTICManagementSystem\UnicomTICManagementSystem\obj\Debug\UnicomTICManagementSystem.Views.TimetableForm.resources
+C:\Users\Danuharan\Desktop\FOR C# PROJECT\UnicomTICManagementSystem\UnicomTICManagementSystem\obj\Debug\UnicomTICManagementSystem.Views.RoomForm.resources

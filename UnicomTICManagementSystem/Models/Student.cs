@@ -8,5 +8,9 @@ namespace UnicomTICManagementSystem.Models
 {
     internal class Student
     {
+        public int StudentId { get; set; }
+        public string StudentName { get; set; }
+        public int CourseId { get; set; }
+     
     }
 }

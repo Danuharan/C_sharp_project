@@ -8,5 +8,8 @@ namespace UnicomTICManagementSystem.Models
 {
     internal class Exam
     {
+        public int ExamId { get; set; }
+        public string ExamName { get; set; }
+        public int SubjectId { get; set; }
     }
 }

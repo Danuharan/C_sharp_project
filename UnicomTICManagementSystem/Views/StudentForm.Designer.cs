@@ -36,8 +36,9 @@
             this.button2_delete = new System.Windows.Forms.Button();
             this.button2_edit = new System.Windows.Forms.Button();
             this.button2_add = new System.Windows.Forms.Button();
-            this.dataGridView2_subject = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2_subject)).BeginInit();
+            this.dataGridView2_student = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2_student)).BeginInit();
             this.SuspendLayout();
             // 
             // label_form_title
@@ -95,6 +96,7 @@
             this.button2_delete.TabIndex = 15;
             this.button2_delete.Text = "DELETE";
             this.button2_delete.UseVisualStyleBackColor = true;
+            this.button2_delete.Click += new System.EventHandler(this.button2_delete_Click);
             // 
             // button2_edit
             // 
@@ -104,6 +106,7 @@
             this.button2_edit.TabIndex = 14;
             this.button2_edit.Text = "UPDATE";
             this.button2_edit.UseVisualStyleBackColor = true;
+            this.button2_edit.Click += new System.EventHandler(this.button2_edit_Click);
             // 
             // button2_add
             // 
@@ -113,23 +116,37 @@
             this.button2_add.TabIndex = 13;
             this.button2_add.Text = "ADD";
             this.button2_add.UseVisualStyleBackColor = true;
+            this.button2_add.Click += new System.EventHandler(this.button2_add_Click);
             // 
-            // dataGridView2_subject
+            // dataGridView2_student
             // 
-            this.dataGridView2_subject.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2_subject.Location = new System.Drawing.Point(134, 220);
-            this.dataGridView2_subject.Name = "dataGridView2_subject";
-            this.dataGridView2_subject.RowHeadersWidth = 51;
-            this.dataGridView2_subject.RowTemplate.Height = 24;
-            this.dataGridView2_subject.Size = new System.Drawing.Size(525, 176);
-            this.dataGridView2_subject.TabIndex = 16;
+            this.dataGridView2_student.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2_student.Location = new System.Drawing.Point(134, 220);
+            this.dataGridView2_student.Name = "dataGridView2_student";
+            this.dataGridView2_student.RowHeadersWidth = 51;
+            this.dataGridView2_student.RowTemplate.Height = 24;
+            this.dataGridView2_student.Size = new System.Drawing.Size(525, 176);
+            this.dataGridView2_student.TabIndex = 16;
+            this.dataGridView2_student.SelectionChanged += new System.EventHandler(this.dataGridView2_student_SelectionChanged);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(682, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 56);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Back to DashBoard";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // StudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 456);
-            this.Controls.Add(this.dataGridView2_subject);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView2_student);
             this.Controls.Add(this.button2_delete);
             this.Controls.Add(this.button2_edit);
             this.Controls.Add(this.button2_add);
@@ -141,7 +158,7 @@
             this.Name = "StudentForm";
             this.Text = "StudentForm";
             this.Load += new System.EventHandler(this.StudentForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2_subject)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2_student)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,6 +174,7 @@
         private System.Windows.Forms.Button button2_delete;
         private System.Windows.Forms.Button button2_edit;
         private System.Windows.Forms.Button button2_add;
-        private System.Windows.Forms.DataGridView dataGridView2_subject;
+        private System.Windows.Forms.DataGridView dataGridView2_student;
+        private System.Windows.Forms.Button button1;
     }
 }
